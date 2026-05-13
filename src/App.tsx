@@ -1,4 +1,7 @@
 // @ts-nocheck
+import { auth, db } from './firebase';
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged } from 'firebase/auth';
+import { collection, addDoc, getDocs, doc, updateDoc, query, where } from 'firebase/firestore';
 import { useState, useRef, useEffect } from 'react';
 
 /* ─── THEME ─────────────────────────────────────────────────────── */
